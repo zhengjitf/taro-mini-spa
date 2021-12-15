@@ -1,0 +1,24 @@
+.tabbar {
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+  bottom: 40px;
+  left: 10px;
+  right: 10px;
+  height: 100px;
+  display: flex;
+  overflow: hidden;
+}
+.tabItem {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+
+  &.active {
+    color: #40a9ff;
+    border: 1px solid #40a9ff;
+  }
+}
