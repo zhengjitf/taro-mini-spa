@@ -1,5 +1,5 @@
 import { FC, useState } from "react";
-import { View, Button, ScrollView } from "@tarojs/components";
+import { View, Button, ScrollView, Navigator } from "@tarojs/components";
 import styles from './index.module.scss'
 
 
@@ -15,6 +15,7 @@ const PageA: FC<{}> = () => {
         {count}
         <Button size="mini" className={styles.btn} onClick={() => setCount(n => n + 1)}>+</Button>
       </View>
+      <Navigator url="/pages/second/index" style={{ color: '#08f', textDecoration: 'underline' }}>跳转 /pages/second/index</Navigator>
       <View className={styles.title}>滚动容器：</View>
       <ScrollView
         scrollY
