@@ -3,6 +3,14 @@ export default {
     'pages/index/index',
     'pages/second/index'
   ],
+  "subpackages": [
+    {
+      "root": "sub-pkg",
+      "pages": [
+        "pages/cat/index",
+      ]
+    }
+  ],
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',

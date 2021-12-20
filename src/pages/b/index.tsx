@@ -14,6 +14,7 @@ const PageB: FC<{}> = () => {
         {count}
         <Button size="mini" className={styles.btn} onClick={() => setCount(n => n + 1)}>+</Button>
       </View>
+      <dog />
     </View>
   )
 }
